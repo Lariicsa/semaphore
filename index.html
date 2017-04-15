@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Semaphore</title>
+	<style type="text/css">
+		.semaphore {
+			display: flex;
+			background-color: black;
+			height: 8rem;
+			width: 3rem;
+		}
+	</style>
+</head>
+<body onload="semaphore()">
+	<div class="semaphore-cont">
+		<div class="greenLight">green</div>
+		<div class="redLight">red</div>
+		<div class="yellowLight">yellow</div>
+	</div>
+
+	<script type="text/javascript">
+	function green () {
+		document.querySelector('.greenLight').style.color = 'green'
+		document.querySelector('.yellowLight').style.color = 'black'
+		document.querySelector('.redLight').style.color ='black'
+	}
+	function yellow () {
+		document.querySelector('.yellowLight').style.color = 'yellow'
+		document.querySelector('.greenLight').style.color = 'black'
+		document.querySelector('.redLight').style.color ='black'
+	}
+	function red () {
+		document.querySelector('.redLight').style.color = 'red'
+		document.querySelector('.yellowLight').style.color = 'black'
+		document.querySelector('.greenLight').style.color = 'black'
+	}
+
+	function semaphore () {
+		setInterval(green, 1000);
+		setInterval(yellow, 2000);
+		setInterval(red, 4000);
+	}
+	</script>
+</body>
+</html>
