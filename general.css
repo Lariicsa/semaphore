@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: Anton, sans-serif
+    display: flex;
+    justify-content: center;
+}
+
+.city {
+	background-image: url('assets/angel.jpg');
+	background-color: blue;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 100%;
+	min-height: 60rem;
+	width: 100%;
+}
+
+.trafficLight {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40rem;
+	width: 12rem;
+}
+
+.trafficLightTop {
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #474747;
+	height: 40rem;
+	width: 12rem;
+}
+
+.trafficLightBottom {
+	display: flex;
+	background-color: #515151;
+	height: 20rem;
+	width: 4rem;
+}
+
+.innerCont {
+	background-color: #191919;
+	border-radius: 8rem;
+	border: 1px solid #6b6b6b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8rem;
+	width: 8rem;
+}
